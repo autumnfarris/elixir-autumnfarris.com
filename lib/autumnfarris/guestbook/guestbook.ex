@@ -29,4 +29,8 @@ defmodule Autumnfarris.Guestbook do
     |> Entry.changeset(attrs)
     |> Repo.insert()
   end
+
+  def delete_entry(%Entry{} = entry) do
+    Repo.delete(entry)
+  end
 end

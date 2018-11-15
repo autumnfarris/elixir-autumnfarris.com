@@ -26,4 +26,13 @@ defmodule AutumnfarrisWeb.EntryController do
     |> put_flash(:info, "Thank you #{entry.first_name}, your entry was created!")
     |> redirect(to: Routes.entry_path(conn, :new))
   end
+
+  def delete(conn, %{"id" => id}) do
+    entry = Guestbook.get_entry!(id)
+    {:ok, _entry} = Guestbook.delete_entry(entry)
+
+    conn
+    |> put_flash(:info, "Entry deleted successfully.")
+    |>redirect(to: Routes.entry_path(conn, :index))
+  end
 end

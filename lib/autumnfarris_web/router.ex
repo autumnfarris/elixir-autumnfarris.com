@@ -19,7 +19,7 @@ defmodule AutumnfarrisWeb.Router do
 
     get "/resume", PageController, :resume
     get "/", PageController, :about
-    resources "/entries", EntryController, only: [:index, :show, :new, :create]
+    resources "/entries", EntryController, only: [:index, :show, :new, :create, :delete]
   end
 
   # Other scopes may use custom stacks.
