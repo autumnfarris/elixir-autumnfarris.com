@@ -11,7 +11,7 @@ defmodule Autumnfarris.Application do
       # Start the Ecto repository
       Autumnfarris.Repo,
       # Start the endpoint when the application starts
-      AutumnfarrisWeb.Endpoint,
+      AutumnfarrisWeb.Endpoint
       # Starts a worker by calling: Autumnfarris.Worker.start_link(arg)
       # {Autumnfarris.Worker, arg},
     ]

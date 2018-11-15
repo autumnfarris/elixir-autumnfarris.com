@@ -1,0 +1,26 @@
+<body class="about">
+    <div class="mainContent">
+        <div class="content">
+            <div>
+            <h3 class="name">
+                <span>Autumn Farris</span>
+            </h3>
+            </div>
+                <p class="content">
+                <br>I am a web developer, world traveler, yogi, and environmentalist.
+                <br>
+                <br>My education consists of two bachelors degrees in <i>Computer Information Systems</i> and <i>Communication Studies</i>.
+                <br>
+                <br>I strive to write clean code that is easily understandable and maintainable.  I'm always eager to learn new languages and frameworks to expand my knowledge and advance in the ever evolving nature of technology.
+                <br>
+                <br>My goal is to leave the world better than we found it by focusing on bettering local, national, and worldwide communities.
+                <br>
+                <br>I believe in living as if we were going to die tomorrow and learning as if we would live forever.
+                <br>
+                </p>
+            </div>
+        </div>
+    <div class="allForLoveImage">
+        <img src="<%= Routes.static_path(@conn, "/images/all-for-love.jpg") %>" alt="photo">
+    </div>
+</body>

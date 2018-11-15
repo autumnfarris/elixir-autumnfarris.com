@@ -1,0 +1,89 @@
+$bg_color_resume: whitesmoke;
+$header_color: #3d9970;
+$achievements_color: rgb(102, 102, 102);
+$subTitle_font_color: black;
+
+$font_0: Cambria;
+$font_1: Georgia;
+
+@mixin background-style {
+  background-color: $bg_color_resume;
+  font-family: $font_0;
+  padding-top: 25px;
+}
+body.resume {
+    @include background-style;
+}
+div {
+    &.flex-container {
+        display: flex;
+        margin: 0px 95px 0px 95px;
+        padding: 60px 0px 60px 0px;
+    }
+    &.nameSpace {
+	    margin-bottom: 75px;
+    }
+    &.name {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    &.nameSpaceSubTitle {
+	    font-family: $font_1;
+	    font-style: italic;
+        font-size: 14px;
+    }
+    &.columnStyleLeft {
+        padding-left: 100px;
+	}
+	&.title {
+		font-weight: bold;
+		color: $header_color;
+		padding-top: 25px;
+		padding-bottom: 5px;
+		font-family: $font_1;
+	}
+	&.columnStyleRight {
+        padding-left: 100px;
+        margin-right: -125px;
+	}
+	&.personalInformation {
+		font-size: 14px;
+		margin-bottom: 60px;
+	}
+	&.skills {
+		text-align: left;
+		color: $achievements_color;
+	}
+	&.highlights {
+        color: $achievements_color;
+        margin-right: -90px;
+	}
+}
+p {
+	font-size: 15.5px;
+    color: $achievements_color;
+    
+	&.experienceContent {
+        line-height: 1.5;
+        text-align: left;
+    }
+    &.subTitle {
+        color: $subTitle_font_color;
+        font-family: $font_1;
+    }
+	&.timeStamp {
+		font-size: 12px;
+		margin-bottom: 2px;
+	}
+	&.achievements {
+        font-weight: bold;
+        text-align: left;
+	}
+}
+ul {
+    list-style: none;
+    padding: 0px;
+}
+li {
+    margin: 0 0 5px 0;
+}

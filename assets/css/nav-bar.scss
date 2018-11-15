@@ -1,0 +1,37 @@
+$black: black;
+$color_ocean_green_approx: #3d9970;
+$color_vermilion_approx: orangered;
+
+$font_0: Trebuchet MS;
+$font_1: Lucida Sans Unicode;
+$font_2: Lucida Grande;
+$font_3: Lucida Sans;
+$font_4: Arial;
+$font_5: sans-serif;
+
+html {
+    overflow-y: scroll; 
+}
+
+a {
+	&:active {
+		border-bottom: 3px solid $color_ocean_green_approx !important;
+		display: inline;
+	}
+	&:hover {
+		color: $color_vermilion_approx;
+	}
+}
+
+li a {
+	font-family: $font_0, $font_1, $font_2, $font_3, $font_4, $font_5;
+	text-decoration: none;
+	color: $black;
+	float: right;
+	text-transform: uppercase;
+	font-weight: 525;
+	letter-spacing: .10em;
+    margin-right: 4%;
+}
+
+

@@ -1,0 +1,19 @@
+<body class="guestBook">
+
+<p class="header">~ Guest Book ~</p>
+
+<%= form_for @changeset, Routes.entry_path(@conn, :create), fn f -> %>
+    <div class="label">
+        First Name:
+        <%= text_input f, :first_name, class: "guestBookName" %> <br><br>
+        Last Name:
+        <%= text_input f, :last_name, class: "guestBookName" %> <br><br>
+    Please provide any additional comments...
+    </div>
+    <div>
+        <%= textarea f, :comments, placeholder: "Tell me something!", class: "comments" %><br>
+    </div>
+        <%= submit "Submit",  class: "submitButton" %>
+<% end %>
+
+</body>
