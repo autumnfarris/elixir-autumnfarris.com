@@ -1,0 +1,59 @@
+$bg_color_about: whitesmoke;
+$black: #000;
+$content_color: rgb(109, 109, 109);
+
+$font_0: Cambria;
+$font_1: Cursive;
+$font_3: "Helvetica Neue";
+$background_image_right: url("/images/lavendar-right.jpeg");
+$background_image_left: url("/images/lavendar-left.jpeg");
+
+@mixin background-style {
+  background: $background_image_right, $background_image_left;
+  background-position: bottom right, bottom left;
+  background-repeat: no-repeat;
+  background-color: $bg_color_about;
+  background-size: 505px;
+  padding-top: 25px;
+    }
+body.about {
+        @include background-style;
+    }
+  div {
+    &.mainContent {
+      padding-top: 80px;
+    }
+    &.content {
+      color: $content_color;
+      padding: 105px;
+      font-family: $font_3;
+      line-height: 1.5;
+      width: 55%;
+      box-sizing: border-box;
+      border-style: solid;
+      margin: auto;
+      box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.1);
+    }
+    &.allForLoveImage {
+      padding: 20px;
+      text-align: center;
+    }
+  }
+  h3 {
+    &.name {
+      color: $black;
+      font-family: $font_1;
+      text-align: center;
+      font-size: 28px;
+      margin: 20px 0px 2px;
+      line-height: 0.1em;
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%,hsla(0,0%,0%,0)), color-stop(50%,hsla(0,0%,0%,1.0)), color-stop(100%,hsla(0,0%,0%,0)));
+    }
+    span {
+      background: $bg_color_about;
+      padding: 0 10px;
+    }
+  }
+  p.content {
+    padding: 10px;
+  }

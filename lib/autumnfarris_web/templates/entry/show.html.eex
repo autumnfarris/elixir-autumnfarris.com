@@ -1,0 +1,2 @@
+<h1>Showing Entry</h1>
+<%= render "entry.html", entry: @entry %>

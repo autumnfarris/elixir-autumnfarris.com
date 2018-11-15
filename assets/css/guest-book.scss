@@ -1,0 +1,62 @@
+$black: #000;
+$white: #ffffff;
+$bg_color_guest_book: whitesmoke;
+$comments_border: rgb(117, 115, 115);
+$submit_button: #4caf50;
+$submit_button_border: #28632d;
+
+$font_comments_placeholder: Cambria;
+$font_cursive: Cursive;
+
+$background_image: url("/images/floral-vector.png");
+
+@mixin background-style {
+height: 100%;
+background: $background_image no-repeat left fixed;
+background-size: 575px;
+text-align: center;
+background-color: $bg_color_guest_book;
+padding-top: 25px;
+}
+
+body.guestBook {
+    @include background-style;
+}
+.guestBookName {
+    width: 100px;
+    height: 17px;
+}
+.comments {
+    height: 100px;
+    width: 250px;
+    resize: none;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid $comments_border;
+	border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: $font_comments_placeholder;
+}
+.submitButton {
+    width: 9%;
+    background-color: $submit_button;
+    color: $white;
+    padding: 12px;
+    border-color: $submit_button_border;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: .10em;
+  }
+.label{
+    font-family: $font_cursive;
+}
+p.header {
+    font-family: $font_cursive;
+    text-align: center;
+    font-size: 40px;
+    color: $black;
+  }

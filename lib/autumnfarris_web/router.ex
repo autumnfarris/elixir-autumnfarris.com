@@ -14,9 +14,12 @@ defmodule AutumnfarrisWeb.Router do
   end
 
   scope "/", AutumnfarrisWeb do
-    pipe_through :browser # Use the default browser stack
+    # Use the default browser stack
+    pipe_through :browser
 
-    get "/", PageController, :index
+    get "/resume", PageController, :resume
+    get "/", PageController, :about
+    resources "/entries", EntryController, only: [:index, :show, :new, :create, :delete]
   end
 
   # Other scopes may use custom stacks.

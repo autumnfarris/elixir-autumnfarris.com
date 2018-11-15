@@ -1,0 +1,1 @@
+<strong>(<%= @entry.id %>) </strong> <%= (@entry.first_name) <> " " <> (@entry.last_name)%></b>: "<%=  (@entry.comments) %>"
